@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -7,28 +7,30 @@
     <title>MyProject</title>
     <link rel="stylesheet" href="./styles/index.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
 </head>
 
-<body>
+<body class="overflow-x-hidden">
 
     <header
-        class="bg-[url(./images/gallery0_2.jpeg)] bg-cover bg-no-repeat bg-[#272622] bg-right h-screen bg-zinc-400 bg-blend-multiply">
+        class="bg-[url(./images/gallery0_2.jpeg)] bg-cover bg-no-repeat bg-[#272622] bg-right h-screen bg-zinc-400 bg-blend-multiply relative">
 
-        <nav class="flex justify-around text-white py-4 items-center bg-rose-500">
+        <nav class="flex justify-around text-white py-4 items-center bg-gray-800 fixed bg-transparent z-40 w-full">
 
             <div class="font-semibold text-xl">
                 <a href="#">
-                    <h4>YODA</h4>
+                    <h4>Ch. AGYARKO</h4>
                 </a>
             </div>
 
             <div class="flex justify-around gap-8">
-                <a href="#"><span>Home</span></a>
-                <a href="#"><span>About</span></a>
-                <a href="#"><span>Skills</span></a>
-                <a href="#"><span>Portfolio</span></a>
-                <a href="#"><span>Contact</span></a>
+                <a href="#"><span class="hover:text-rose-400">Home</span></a>
+                <a href="#about"><span class="hover:text-rose-400">About</span></a>
+                <a href="#skills"><span class="hover:text-rose-400">Skills</span></a>
+                <a href="#portfolio"><span class="hover:text-rose-400">Portfolio</span></a>
+                <a href="#contact"><span class="hover:text-rose-400">Contact</span></a>
             </div>
         </nav>
 
@@ -38,43 +40,48 @@
             </h1>
             <h1 class="text-2xl font-light leading-12">A web developer | Graphic designer | Photographer </h1>
 
-            <button class="border-none rounded-sm px-8 py-4 bg-rose-500 mt-4 text-xs hover:bg-fuchsia-600 mt-14">HIRE
-                ME</button>
+            <a href="mailto:bookyodastudios@gmail.com"><button
+                class="border rounded-sm px-8 py-4 bg-none mt-4 text-xs font-bold hover:bg-white hover:text-rose-500 hover:b-none mt-14 cursor-pointer animate-pulse">HIRE
+                ME</button></a>
+            
         </div>
 
     </header>
 
-    <section id="About-session" class="flex flex-row justify-center items-center m-auto">
+    <section id="about" class="flex flex-row justify-center items-center m-auto">
 
-        <div class="flex justify-center items-center py-12 w-[60%] mx-auto relative gap-10">
-            <div class="flex justify-center bg-contain w-full pr-4 max-w-96 h-full">
-                <img src="./images/gallery1_0.jpg" alt="white top" class="bg-contain w-full">
+        <div class="flex justify-center items-center py-20 w-[60%] mx-auto relative gap-10">
+            <div class="flex justify-center bg-contain w- pr-4 max-w-96 h-full">
+                <img src="./images/gallery1_0.jpg" alt="white top" class="bg-contain w-full shadow-lg">
             </div>
 
             <div>
 
-                <h2 class="text-3xl mb-6 border-b-1 border-t-1 py-2 w-18 border-rose-500 text-zinc-700"><span
+                <h2 class="text-2xl mb-6 border-b-1 border-t-1 py-2 w-27 border-rose-500 text-zinc-700"><span
                         class="font-thin">About</span>
                     <span class="font-extrabold">Me</span>
                 </h2>
-                <p class="W-1/4 text-zinc-500 mb-6 leading-4">Separated they live in Bookmarksgrove right at the coast
-                    <br>of
-                    the Semantics, a large language ocean.
-
-                    A small river <br>named Duden flows by their place and supplies it with <br>the necessary
-                    regelialia. It is
-                    a
-                    paradisematic country, <br>in which roasted parts of sentences fly into your mouth
+                <p class="W-1/4 text-sm text-zinc-500 mb-3 leading-6">Hi my name is Charlotte Agyarko but I go by Yoda
+                    in the
+                    creative space.
+                    <br>I am a Ghanaian female photographer striving to make a mark and have my works recognised through
+                    Ghana and beyond.
+                    <br>I hold a bachelors degree in fine arts from Kwame Nkrumah University of Science and Technology.
+                    After years of working for agencies in the advertising
+                    and creative space, my quest for solving problems have lead me to embark on a new challenge and
+                    dive more into tech hence web development.
+                    <br>The goal is to combine all the knowlege I have aquired and provide real-time solutions to my
+                    clients.
                 </p>
 
-                <a href="#">
+                <a href="#portfolio">
                     <button
-                        class="border-none rounded-sm px-8 py-4 bg-rose-500 mt-4 text-white text-xs hover:bg-fuchsia-600">PORTFOLIO</button>
+                        class="border-none rounded-sm px-8 py-4 bg-rose-500 mt-4 text-white text-xs hover:bg-fuchsia-600 cursor-pointer">PORTFOLIO</button>
                 </a>
-                <a href="#">
+                <a href="/images/CV_official.1.pdf" target="_blank" rel="noopener noreferrer">
                     <button
-                        class="border-none rounded-sm px-8 py-4 bg-zinc-700 mt-4 text-white text-xs hover:bg-black">RESUME
-                        </button>
+                        class="border-none rounded-sm px-8 py-4 bg-zinc-700 mt-4 text-white text-xs hover:bg-black cursor-pointer">RESUME
+                    </button>
                 </a>
                 <!-- border-t-2 border-rose-500 border px-2 py-8 w-2/3 -->
             </div>
@@ -83,8 +90,8 @@
     </section>
 
 
-    <section id="skills-session" class="flex flex-row justify-center items-start">
-        <div class="flex my-8 gap-26 w-[60%] mx-auto">
+    <section id="skills" class="flex flex-row justify-center items-start">
+        <div class="flex py-24 gap-26 w-[60%] mx-auto">
 
             <div class="justify-center mx-auto">
                 <h3 class="text-xl mb-6 border-b-1 border-t-1 py-2 w-22 border-rose-500 text-zinc-700">
@@ -93,25 +100,25 @@
                 </h3>
 
                 <p
-                    class="text-xs pb-2 relative border-b-4 border-zinc-300 py-2 w-80 before:absolute before:bottom-0 before:left-0 before:top-8 before:w-75  before:h-0 before:border-b-4 before:border-rose-500 before:transform text-zinc-400">
-                    DESIGN</p>
+                    class="text-xs pb-2 relative border-b-5 border-zinc-300 py-2 w-80 before:absolute before:bottom-0 before:left-0 before:top-8 before:w-75  before:h-0 before:border-b-5 before:border-rose-500 before:transform text-zinc-400">
+                    GRAPHIC DESIGN</p>
                 <p
-                    class="text-xs pb-2 relative border-b-4 border-zinc-300 py-2 w-80 before:absolute before:bottom-0 before:left-0 before:top-8 before:w-70  before:h-0 before:border-b-4 before:border-rose-500 before:transform text-zinc-400">
-                    HTML5</p>
+                    class="text-xs pb-2 relative border-b-5 border-zinc-300 py-2 w-80 before:absolute before:bottom-0 before:left-0 before:top-8 before:w-70  before:h-0 before:border-b-5 before:border-rose-500 before:transform text-zinc-400">
+                    HTML5 / CSS3</p>
                 <p
-                    class="text-xs pb-2 relative border-b-4 border-zinc-300 py-2 w-80 before:absolute before:bottom-0 before:left-0 before:top-8 before:w-65  before:h-0 before:border-b-4 before:border-rose-500 before:transform text-zinc-400">
-                    CSS3</p>
-                <p
-                    class="text-xs pb-2 relative border-b-4 border-zinc-300 py-2 w-80 before:absolute before:bottom-0 before:left-0 before:top-8 before:w-65  before:h-0 before:border-b-4 before:border-rose-500 before:transform text-zinc-400">
-                    JAVASCRIPT</p>
-                <p
-                    class="text-xs pb-2 relative border-b-4 border-zinc-300 py-2 w-80 before:absolute before:bottom-0 before:left-0 before:top-8 before:w-60  before:h-0 before:border-b-4 before:border-rose-500 before:transform text-zinc-400">
+                    class="text-xs pb-2 relative border-b-5 border-zinc-300 py-2 w-80 before:absolute before:bottom-0 before:left-0 before:top-8 before:w-70  before:h-0 before:border-b-5 before:border-rose-500 before:transform text-zinc-400">
                     REACT</p>
                 <p
-                    class="text-xs pb-2 relative border-b-4 border-zinc-300 py-2 w-80 before:absolute before:bottom-0 before:left-0 before:top-8 before:w-75  before:h-0 before:border-b-4 before:border-rose-500 before:transform text-zinc-400">
+                    class="text-xs pb-2 relative border-b-5 border-zinc-300 py-2 w-80 before:absolute before:bottom-0 before:left-0 before:top-8 before:w-70  before:h-0 before:border-b-5 before:border-rose-500 before:transform text-zinc-400">
+                    JAVASCRIPT</p>
+                <p
+                    class="text-xs pb-2 relative border-b-5 border-zinc-300 py-2 w-80 before:absolute before:bottom-0 before:left-0 before:top-8 before:w-70  before:h-0 before:border-b-5 before:border-rose-500 before:transform text-zinc-400">
+                    LIGHTROOM</p>
+                <p
+                    class="text-xs pb-2 relative border-b-5 border-zinc-300 py-2 w-80 before:absolute before:bottom-0 before:left-0 before:top-8 before:w-75  before:h-0 before:border-b-5 before:border-rose-500 before:transform text-zinc-400">
                     PHOTOSHOP</p>
                 <p
-                    class="text-xs pb-2 relative border-b-4 border-zinc-300 py-2 w-80 before:absolute before:bottom-0 before:left-0 before:top-8 before:w-75  before:h-0 before:border-b-4 before:border-rose-500 before:transform text-zinc-400">
+                    class="text-xs pb-2 relative border-b-5 border-zinc-300 py-2 w-80 before:absolute before:bottom-0 before:left-0 before:top-8 before:w-75  before:h-0 before:border-b-5 before:border-rose-500 before:transform text-zinc-400">
                     CAPTURE ONE</p>
             </div>
 
@@ -122,32 +129,35 @@
                 </h3>
 
                 <p class="text-sm text-zinc-500 pb-4">
-                    <span class="uppercase font-bold text-zinc-700 leading-6">Product
+                    <span class="uppercase font-bold text-zinc-700 leading-6">Graphic
                         Designer</span>
-                    <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident perferendis
-                    exercitationem et a modi, iste ex dolorem mollitia cupiditate neque odio eum libero saepe magni unde
-                    ipsam ab nam aut.
+                    <br><span class="font-bold">2014 - 2015:</span>
+                    Managed and supervised all design works of the company. Brainstormed with the creative team to
+                    design and meet clients needs. Designed all brand
+                    related works for cliens like, Silver star Limited, TATA Motors and Lakeside Estate. <br><span
+                        class="font-bold">Brandzone
+                        and Outlook Munik</span>
                 </p>
-                <p class="text-sm text-zinc-500 pb-4">
-                    <span class="uppercase font-bold text-zinc-700 leading-6">UX
-                        Designer</span> <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-                    perferendis
-                    exercitationem et a modi, iste ex dolorem mollitia cupiditate neque odio eum libero saepe magni unde
-                    ipsam ab nam aut.
+                <!-- <p class="text-sm text-zinc-500 pb-4"> -->
+                <!-- <span class="uppercase font-bold text-zinc-700 leading-6">UX -->
+                <!-- Designer</span> <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident -->
+                <!-- perferendis -->
+                <!-- exercitationem et a modi, iste ex dolorem mollitia cupiditate neque odio eum libero saepe magni unde -->
+                <!-- ipsam ab nam aut. -->
                 </p>
                 <p class="text-sm text-zinc-500 pb-4">
                     <span class="uppercase font-bold text-zinc-700 leading-6">
-                        Photography</span> <br>Lorem ipsum dolor
-                    sit amet consectetur adipisicing elit. Provident perferendis
-                    exercitationem et a modi, iste ex dolorem mollitia cupiditate neque odio eum libero saepe magni unde
-                    ipsam ab nam aut.
+                        Photography</span> <br><span class="font-bold">2016 - present:</span> Assisted creative director
+                    to capture all events and
+                    projects. Manage the studio and all photo equipments. Retouched and supervised all post production.
+                    Worked with top brands like Ernest chemist Ltd., Fidelity Bank Ghana, Cliff Haven resort to name a
+                    few. <br><span class="font-bold">Creative Mindfield
+                        and Laceup Media</span>
                 </p>
                 <p class="text-sm text-zinc-500 pb-4">
-                    <span class="uppercase font-bold text-zinc-700 leading-6">UX
-                        Designer</span> <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-                    perferendis
-                    exercitationem et a modi, iste ex dolorem mollitia cupiditate neque odio eum libero saepe magni unde
-                    ipsam ab nam aut.
+                    <span class="uppercase font-bold text-zinc-700 leading-6">Frontend
+                        Developer</span> <br><span class="font-bold">2025 - present:</span> Used tools like HTML5, CSS3,
+                    Javascript and React to create websites.
                 </p>
 
             </div>
@@ -155,9 +165,84 @@
         </div>
     </section>
 
-    <section id="gallery-session"></section>
+    <section id="portfolio" class="bg-zinc-100">
+        <div class="flex flex-col w-[60%] mx-auto py-20">
+            <div class="justify-center mx-auto">
+                <h4 class="text-2xl mb-14 border-b-1 border-t-1 py-2 w-37 border-rose-500 text-zinc-700">
+                    <span class="font-thin">My</span>
+                    <span class="font-extrabold">Portfolio</span>
+                </h4>
+            </div>
+
+            <div class="grid grid-cols-3 gap-4 mb-16">
+
+                <img src="./images/gallery3.jpg" alt="product pic" class="col-span-3 transition-transform duration-500 hover:scale-105 ">
+                <img src="./images/gallery11.jpg" alt="black and white pic" class="w-64 transition-transform duration-500 hover:scale-110">
+                <img src="./images/gallery12.jpg" alt="feet ring pic" class="w-64 transition-transform duration-500 hover:scale-110">
+                <img src="./images/gallery7.jpg" alt="cupcake pic" class="w-64 transition-transform duration-500 hover:scale-110">
+                <!-- <img src="./images/gallery6.jpg" alt="baby red"> -->
+                <img src="./images/gallery5.jpg" alt="baby blue" class="w-64 transition-transform duration-500 hover:scale-110">
+                <img src="./images/gallery4.jpg" alt="rgb pic" class="w-64 transition-transform duration-500 hover:scale-110">
+                <img src="./images/gallery9.jpg" alt="dreads pic" class="w-64 transition-transform duration-500 hover:scale-110">
+                <!-- <img src="./images/gallery14.jpg" alt=""> -->
+
+            </div>
+        </div>
+
+    </section>
 
 
+    <footer id="contact" class="h-[40vh] flex flex-col text-center justify-center bg-gray-800 text-white font-extralight text-sm">
+
+
+
+        <div class="flex flex-row justify-between items-center mx-auto py-4 gap-20">
+
+            <div class="flex flex-row justify-around items-center">
+
+                <!-- <h5 class="text-sm font-extralight text-white">My Contact Details</h5> -->
+
+                <!-- <p class="pl-2 border-l-1 text-left"> -->
+                <!-- <span class="uppercase font-bold">Phone:</span> -->
+                <!-- <br>+233 240 571 700 <br>+233 505 885 364 -->
+
+                <p class="pb-4 text-left text-xl font-bold">
+                    <span class="uppercase font-extralight text-sm">Get In Touch:</span>
+                    <br>
+                    <a href="mailto:bookyodastudios@gmail.com"><span class="cursor-pointer hover:text-rose-400">bookyodastudios@gmail.com</span></a>
+
+                    <!-- <p class="pl-2 border-l-1 text-left"> -->
+                    <!-- <span class="uppercase font-bold">Address:</span> -->
+                    <!-- <br>P. O. Box kt 12 -->
+                    <!-- <br>Kotobabi - Accra, Ghana. -->
+                    <!-- </p> -->
+            </div>
+
+            <ul class="flex gap-4 justify-center md:py-0 py-4 md:flex-row lg:flex-row text-gray-300">
+                <li class="">
+                    <a href="" class=""><i
+                            class="uil uil-instagram lg:text-4xl md:text-3xl text-4xl hover:text-gold hover:text-rose-400"></i></a>
+                </li>
+                <li class="">
+                    <a href="" class=""><i
+                            class="uil uil-facebook lg:text-4xl md:text-3xl text-4xl hover:text-gold hover:text-rose-400"></i></a>
+                </li>
+                <li class="">
+                    <a href="" class=""><i
+                            class="uil uil-linkedin lg:text-4xl md:text-3xl text-4xl hover:text-gold hover:text-rose-400"></i></a>
+                </li>
+                <li class="">
+                    <a href="" class=""><i class="fa-brands fa-linkedin" style="color: #f5f5f5;"></i></a>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="border-t-1 w-1/2 mx-auto py-6 flex justify-center items-center">
+            <p class="">Copyright ©2025 All rights reserved | This template is made by Charlotte Agyarko</p>
+        </div>
+
+    </footer>
 
 </body>
 
