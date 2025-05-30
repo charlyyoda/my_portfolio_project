@@ -9,14 +9,15 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="index.js" defer></script>
 
 </head>
 
 <body class="overflow-x-hidden">
 
-    <header>
+    <!-- <header> -->
 
-        <nav class="text-white py-4 bg-gray-800 fixed z-30 w-full">
+    <!-- <nav class="text-white py-4 bg-gray-800 fixed z-30 w-full">
             <div class="flex justify-around items-center">
                 <div class="font-semibold text-xl">
                     <a href="#">
@@ -30,10 +31,10 @@
                     <a href="#skills"><span class="hover:text-rose-400">Skills</span></a>
                     <a href="#portfolio"><span class="hover:text-rose-400">Portfolio</span></a>
                     <a href="#contact"><span class="hover:text-rose-400">Contact</span></a>
-                </div>
+                </div> -->
 
-                <!-- Hamburger navbar -->
-                <div class="md:hidden">
+    <!-- Hamburger navbar -->
+    <!-- <div class="md:hidden">
                     <a href="#mobile-menu-button"><button id="mobile-menu-button" class="text-white focus:outline-none">
                             <i class="fas fa-bars text-2xl"></i>
                         </button></a>
@@ -48,11 +49,56 @@
                 <a href="#portfolio"><span class="block py-2 hover:text-rose-400">Portfolio</span></a>
                 <a href="#contact"><span class="block py-2 hover:text-rose-400">Contact</span></a>
             </div>
+        </nav> -->
+
+    <!-- chatgpt format -->
+    <header class="bg-gray-900 text-white">
+
+        <nav class="bg-gray-800 fixed w-full z-30 py-4">
+            <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+                <!-- Logo -->
+                <a href="#" class="font-semibold text-xl">
+                    Ch. AGYARKO
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8" >
+                    <a href="#" class="hover:text-rose-400">Home</a>
+                    <a href="#about" class="hover:text-rose-400">About</a>
+                    <a href="#skills" class="hover:text-rose-400">Skills</a>
+                    <a href="#portfolio" class="hover:text-rose-400">Portfolio</a>
+                    <a href="#contact" class="hover:text-rose-400">Contact</a>
+                </div>
+
+                <!-- Hamburger Icon for Mobile -->
+                <button class="md:hidden focus:outline-none" onclick="toggleMenu()">
+                    <svg class="w-6 h-6" id="ham" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div  class="md:hidden hidden px-4 pt-4 pb-2 space-y-2 bg-gray-700" id="nav-bar">
+                <a href="#" class="block hover:text-rose-400">Home</a>
+                <a href="#about" class="block hover:text-rose-400">About</a>
+                <a href="#skills" class="block hover:text-rose-400">Skills</a>
+                <a href="#portfolio" class="block hover:text-rose-400">Portfolio</a>
+                <a href="#contact" class="block hover:text-rose-400">Contact</a>
+            </div>
         </nav>
+
+        <!-- Spacer to avoid overlap due to fixed navbar -->
+        <div class="pt-20"></div>
 
     </header>
 
-    <section id="hero"
+
+
+
+
+    <!-- <section id="hero"
         class="bg-[url(./images/gallery0_2.jpeg)] bg-cover bg-no-repeat bg-[#272622] bg-right h-screen bg-zinc-400 bg-blend-multiply relative">
 
         <div class="text-white flex flex-col text-center justify-center items-center h-full">
@@ -67,10 +113,35 @@
 
         </div>
 
+    </section> -->
+
+
+    <!-- chatgpt format -->
+    <section id="hero"
+        class="bg-[url('./images/gallery0_2.jpeg')] bg-cover bg-no-repeat bg-center md:bg-right bg-blend-multiply bg-zinc-600 text-white h-screen relative">
+
+        <div class="flex flex-col justify-center items-center h-full text-center px-4">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight">
+                <span class="font-extralight">Howdy, I'm </span>
+                <span class="font-extrabold">Yoda</span>
+            </h1>
+
+            <h2 class="text-lg sm:text-xl md:text-2xl font-light mt-4">
+                A web developer | Graphic designer | Photographer
+            </h2>
+
+            <a href="mailto:bookyodastudios@gmail.com">
+                <button
+                    class="rounded-3xl px-8 py-3 mt-8 text-sm font-bold bg-rose-500 text-white animate-pulse hover:animate-none transition duration-300">
+                    HIRE ME
+                </button>
+            </a>
+        </div>
     </section>
 
 
-    <section id="about" class="flex flex-row sm:flex-col md:flex-col justify-center items-center m-auto">
+
+    <!-- <section id="about" class="flex flex-row md:flex-col justify-center items-center m-auto">
 
         <div class="flex justify-center items-center py-20 w-[60%] m-auto relative gap-10">
             <div class="flex justify-center bg-contain pr-4 max-w-96 h-full">
@@ -105,14 +176,59 @@
                         class="border-none rounded-sm px-8 py-4 bg-zinc-700 mt-4 text-white text-xs hover:bg-black cursor-pointer">RESUME
                     </button>
                 </a>
-                <!-- border-t-2 border-rose-500 border px-2 py-8 w-2/3 -->
+                <!- border-t-2 border-rose-500 border px-2 py-8 w-2/3 -->
+    <!-- </div> -->
+
+    <!-- </div> -->
+    <!-- </section> -->
+
+
+    <!-- chatgpt format -->
+    <section id="about" class="py-20 bg-white text-zinc-700">
+        <div class="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-12 px-4">
+
+            <!-- Image -->
+            <div class="w-full lg:w-1/2 flex justify-center">
+                <img src="./images/gallery1_0.jpg" alt="Charlotte Agyarko" class="w-full max-w-sm rounded-lg shadow-lg">
             </div>
 
+            <!-- Text -->
+            <div class="w-full lg:w-1/2">
+                <h2 class="text-3xl font-thin mb-4 border-b-2 border-rose-500 inline-block pb-1">
+                    About <span class="font-extrabold">Me</span>
+                </h2>
+
+                <p class="text-sm text-zinc-600 leading-6 mb-6">
+                    Hi, my name is Charlotte Agyarko, known as Yoda in the creative space.
+                    <br><br>
+                    I'm a Ghanaian female photographer striving to leave a mark locally and internationally.
+                    With a Bachelor's degree in Fine Arts from KNUST, and years of agency experience in advertising and
+                    design, I've recently ventured deeper into tech and web development.
+                    <br><br>
+                    My goal is to fuse creativity and technology to deliver powerful real-time solutions for clients.
+                </p>
+
+                <!-- Buttons -->
+                <div class="flex flex-wrap gap-4">
+                    <a href="#portfolio">
+                        <button
+                            class="rounded-sm px-6 py-3 bg-rose-500 text-white text-sm hover:bg-rose-600 transition">
+                            PROJECT
+                        </button>
+                    </a>
+                    <a href="/images/CV_official.1.pdf" target="_blank" rel="noopener noreferrer">
+                        <button class="rounded-sm px-6 py-3 bg-zinc-700 text-white text-sm hover:bg-black transition">
+                            RESUME
+                        </button>
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
 
 
-    <section id="skills" class="flex flex-col justify-center items-center">
+
+    <!-- <section id="skills" class="flex flex-col justify-center items-center">
         <div class="flex py-10 gap-26 w-[60%] h-full">
 
             <div class="justify-center m-auto">
@@ -160,13 +276,13 @@
                         class="font-bold">Brandzone
                         and Outlook Munik</span>
                 </p>
-                <!-- <p class="text-sm text-zinc-500 pb-4"> -->
-                <!-- <span class="uppercase font-bold text-zinc-700 leading-6">UX -->
-                <!-- Designer</span> <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident -->
-                <!-- perferendis -->
-                <!-- exercitationem et a modi, iste ex dolorem mollitia cupiditate neque odio eum libero saepe magni unde -->
-                <!-- ipsam ab nam aut. -->
-                </p>
+                <!- <p class="text-sm text-zinc-500 pb-4"> -->
+    <!-- <span class="uppercase font-bold text-zinc-700 leading-6">UX -->
+    <!-- Designer</span> <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident -->
+    <!-- perferendis -->
+    <!-- exercitationem et a modi, iste ex dolorem mollitia cupiditate neque odio eum libero saepe magni unde -->
+    <!-- ipsam ab nam aut. -->
+    <!-- </p>
                 <p class="text-sm text-zinc-500 pb-4">
                     <span class="uppercase font-bold text-zinc-700 leading-6">
                         Photography</span> <br><span class="font-bold">2016 - present:</span> Assisted creative director
@@ -185,9 +301,109 @@
             </div>
 
         </div>
+    </section> -->
+
+
+    <!-- chatgpt format -->
+    <section id="skills" class="bg-white py-20 text-zinc-800">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col lg:flex-row gap-16">
+
+            <!-- Skills Column -->
+            <div class="flex-1">
+                <h3 class="text-2xl mb-6 border-b-2 border-rose-500 inline-block">
+                    <span class="font-thin">My</span> <span class="font-extrabold">Skills</span>
+                </h3>
+
+                <!-- Skill Item -->
+                <div class="mb-4">
+                    <p class="text-sm text-zinc-600 mb-1">Graphic Design</p>
+                    <div class="w-full bg-zinc-200 rounded h-2 relative">
+                        <div class="bg-rose-500 h-2 rounded" style="width: 90%;"></div>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <p class="text-sm text-zinc-600 mb-1">HTML5 / CSS3</p>
+                    <div class="w-full bg-zinc-200 rounded h-2 relative">
+                        <div class="bg-rose-500 h-2 rounded" style="width: 85%;"></div>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <p class="text-sm text-zinc-600 mb-1">React</p>
+                    <div class="w-full bg-zinc-200 rounded h-2 relative">
+                        <div class="bg-rose-500 h-2 rounded" style="width: 80%;"></div>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <p class="text-sm text-zinc-600 mb-1">JavaScript</p>
+                    <div class="w-full bg-zinc-200 rounded h-2 relative">
+                        <div class="bg-rose-500 h-2 rounded" style="width: 80%;"></div>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <p class="text-sm text-zinc-600 mb-1">Lightroom</p>
+                    <div class="w-full bg-zinc-200 rounded h-2 relative">
+                        <div class="bg-rose-500 h-2 rounded" style="width: 85%;"></div>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <p class="text-sm text-zinc-600 mb-1">Photoshop</p>
+                    <div class="w-full bg-zinc-200 rounded h-2 relative">
+                        <div class="bg-rose-500 h-2 rounded" style="width: 85%;"></div>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <p class="text-sm text-zinc-600 mb-1">Capture One</p>
+                    <div class="w-full bg-zinc-200 rounded h-2 relative">
+                        <div class="bg-rose-500 h-2 rounded" style="width: 85%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experience Column -->
+            <div class="flex-1">
+                <h3 class="text-2xl mb-6 border-b-2 border-rose-500 inline-block">
+                    <span class="font-thin">My</span> <span class="font-extrabold">Experiences</span>
+                </h3>
+
+                <!-- Experience Item -->
+                <div class="mb-6">
+                    <p class="text-sm text-zinc-600">
+                        <span class="uppercase font-bold text-zinc-700">Graphic Designer</span><br>
+                        <span class="font-bold">2014 - 2015:</span> Managed and supervised all design work for clients
+                        like Silver Star Ltd., TATA Motors, and Lakeside Estate.
+                        Worked with teams at <span class="font-bold">Brandzone and Outlook Munik</span>.
+                    </p>
+                </div>
+
+                <div class="mb-6">
+                    <p class="text-sm text-zinc-600">
+                        <span class="uppercase font-bold text-zinc-700">Photography</span><br>
+                        <span class="font-bold">2016 - Present:</span> Assisted creative directors, managed studio
+                        equipment, and retouched projects for brands like Fidelity Bank, Ernest Chemists Ltd., and Cliff
+                        Haven Resort. Worked with <span class="font-bold">Creative Mindfield and Laceup Media</span>.
+                    </p>
+                </div>
+
+                <div class="mb-6">
+                    <p class="text-sm text-zinc-600">
+                        <span class="uppercase font-bold text-zinc-700">Frontend Developer</span><br>
+                        <span class="font-bold">2025 - Present:</span> Building responsive websites using HTML5, CSS3,
+                        JavaScript, and React.
+                    </p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="portfolio" class="bg-zinc-100">
+
+
+    <!-- <section id="portfolio" class="bg-zinc-100">
         <div class="flex flex-col w-[60%] mx-auto py-20 h-full">
             <div class="flex justify-center items-center">
                 <h4 class="text-2xl mb-14 border-b-1 border-t-1 py-2 w-37 border-rose-500 text-zinc-700">
@@ -212,20 +428,53 @@
                     class="w-64 transition-transform duration-500 hover:scale-120">
                 <img src="./images/gallery4.jpg" alt="rgb pic"
                     class="w-64 transition-transform duration-500 hover:scale-110">
-                <!-- <img src="./images/gallery5.jpg" alt="baby blue" -->
-                <!-- class="w-64 transition-transform duration-500 hover:scale-110"> -->
-
-                <!-- <img src="./images/gallery9.jpg" alt="dreads pic" -->
-                <!-- class="w-64 transition-transform duration-500 hover:scale-110"> -->
-                <!-- <img src="./images/gallery14.jpg" alt=""> -->
-
             </div>
         </div>
 
+    </section> -->
+
+
+    <!-- chatgpt format -->
+    <section id="portfolio" class="bg-zinc-100 py-20">
+        <div class="max-w-6xl mx-auto px-4">
+
+            <!-- Heading -->
+            <div class="text-center mb-12">
+                <h4 class="text-3xl font-thin text-zinc-700 border-b-2 border-rose-500 inline-block pb-2">
+                    My <span class="font-extrabold">Project</span>
+                </h4>
+            </div>
+
+            <!-- Grid Layout -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Main Image (full-width on all screens) -->
+                <div class="col-span-1 sm:col-span-2 lg:col-span-3">
+                    <img src="./images/gallery3.jpg" alt="product pic"
+                        class="w-full rounded hover:shadow-lg transition-transform duration-500 hover:scale-105">
+                </div>
+
+                <!-- Portfolio Items -->
+                <img src="./images/Screenshot_knusford.png" alt="grow"
+                    class="w-full rounded hover:shadow-lg transition-transform duration-300 hover:scale-110">
+                <img src="./images/Screenshot_dogger.png" alt="dogger"
+                    class="w-full rounded hover:shadow-lg transition-transform duration-300 hover:scale-110">
+                <img src="./images/gallery6.jpg" alt="baby red"
+                    class="w-full rounded hover:shadow-lg transition-transform duration-300 hover:scale-110">
+                <img src="./images/gallery11.jpg" alt="black and white pic"
+                    class="w-full rounded hover:shadow-lg transition-transform duration-300 hover:scale-110">
+                <img src="./images/gallery7.jpg" alt="cupcake pic"
+                    class="w-full rounded hover:shadow-lg transition-transform duration-300 hover:scale-110">
+                <img src="./images/gallery4.jpg" alt="rgb pic"
+                    class="w-full rounded hover:shadow-lg transition-transform duration-300 hover:scale-110">
+
+            </div>
+
+        </div>
     </section>
 
 
-    <footer id="contact"
+
+    <!-- <footer id="contact"
         class="h-[35vh] flex flex-col text-center justify-center bg-gray-800 text-white font-extralight text-sm ">
 
 
@@ -234,25 +483,30 @@
 
             <div class="flex flex-row justify-around items-center gap-20 mb-3">
 
-                <!-- <h5 class="text-sm font-extralight text-white">My Contact Details</h5> -->
+                <!- DEVs changes to contact details -->
+    <!-- <h5 class="text-sm font-extralight text-white">My Contact Details</h5> -->
 
-                <!-- <p class="pl-2 border-l-1 text-left"> -->
-                <!-- <span class="uppercase font-bold">Phone:</span> -->
-                <!-- <br>+233 240 571 700 <br>+233 505 885 364 -->
+    <!-- <p class="pl-2 border-l-1 text-left"> -->
+    <!-- <span class="uppercase font-bold">Phone:</span> -->
+    <!-- <br>+233 240 571 700 <br>+233 505 885 364 -->
+    <!-- DEVS changes ends her -->
 
-                <p class="pb-4 text-left">
+    <!-- <p class="pb-4 text-left">
                     <span class="uppercase font-semibold text-sm">Get In Touch:</span>
                     <br>
                     <a href="mailto:bookyodastudios@gmail.com"><span
-                            class="font-light text-xl hover:text-rose-400">bookyodastudios@gmail.com</span></a>
+                            class="font-light text-xl hover:text-rose-400">bookyodastudios@gmail.com</span></a> -->
 
-                    <!-- <p class="pl-2 border-l-1 text-left"> -->
-                    <!-- <span class="uppercase font-bold">Address:</span> -->
-                    <!-- <br>P. O. Box kt 12 -->
-                    <!-- <br>Kotobabi - Accra, Ghana. -->
-                    <!-- </p> -->
 
-                <ul class="flex gap-2 justify-center md:py-0 py-4 md:flex-row lg:flex-row text-gray-300">
+    <!-- <p class="pl-2 border-l-1 text-left"> -->
+    <!-- <span class="uppercase font-bold">Address:</span> -->
+    <!-- <br>P. O. Box kt 12 -->
+    <!-- <br>Kotobabi - Accra, Ghana. -->
+    <!-- </p> -->
+
+
+
+    <!-- <ul class="flex gap-2 justify-center md:py-0 py-4 md:flex-row lg:flex-row text-gray-300">
                     <li class="">
                         <a href="" class=""><i
                                 class="uil uil-instagram lg:text-3xl md:text-3xl text-4xl hover:text-gold hover:text-rose-400"></i></a>
@@ -265,10 +519,10 @@
                         <a href="" class=""><i
                                 class="uil uil-linkedin lg:text-3xl md:text-3xl text-4xl hover:text-gold hover:text-rose-400"></i></a>
                     </li>
-                    <!-- <li class=""> -->
-                    <!-- <a href="" class=""><i class="fa-brands fa-linkedin" style="color: #f5f5f5;"></i></a> -->
-                    <!-- </li> -->
-                </ul>
+                    <!- <li class=""> -->
+    <!-- <a href="" class=""><i class="fa-brands fa-linkedin" style="color: #f5f5f5;"></i></a> -->
+    <!-- </li> -->
+    <!-- </ul>
 
             </div>
 
@@ -280,7 +534,47 @@
             <p class="">Copyright ©2025 All rights reserved | This template is made by Charlotte Agyarko</p>
         </div>
 
+    </footer> -->
+
+
+    <!-- chatgpt format -->
+    <footer id="contact" class="bg-gray-800 text-white text-sm font-extralight py-10">
+        <div class="max-w-4xl mx-auto px-4 flex flex-col gap-6">
+
+            <!-- Contact Info -->
+            <div class="text-center md:text-left">
+                <p class="uppercase font-semibold text-sm mb-2">Get In Touch:</p>
+                <a href="mailto:bookyodastudios@gmail.com" class="text-xl font-light hover:text-rose-400 block">
+                    bookyodastudios@gmail.com
+                </a>
+            </div>
+
+            <!-- Social Icons -->
+            <ul class="flex justify-center md:justify-start gap-4 text-3xl text-gray-300">
+                <li>
+                    <a href="#" aria-label="Instagram" class="hover:text-rose-400 transition">
+                        <i class="uil uil-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" aria-label="Facebook" class="hover:text-rose-400 transition">
+                        <i class="uil uil-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" aria-label="LinkedIn" class="hover:text-rose-400 transition">
+                        <i class="uil uil-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Copyright -->
+            <div class="border-t border-gray-600 pt-4 text-center text-xs text-gray-400">
+                <p>&copy; 2025 All rights reserved | This template is made by Charlotte Agyarko</p>
+            </div>
+        </div>
     </footer>
+
 
 </body>
 
