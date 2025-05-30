@@ -8,31 +8,52 @@
     <link rel="stylesheet" href="./styles/index.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 </head>
 
 <body class="overflow-x-hidden">
 
-    <header
-        class="bg-[url(./images/gallery0_2.jpeg)] bg-cover bg-no-repeat bg-[#272622] bg-right h-screen bg-zinc-400 bg-blend-multiply relative">
+    <header>
 
-        <nav class="flex justify-around text-white py-4 items-center bg-gray-800 fixed bg-transparent z-40 w-full">
+        <nav class="text-white py-4 bg-gray-800 fixed z-30 w-full">
+            <div class="flex justify-around items-center">
+                <div class="font-semibold text-xl">
+                    <a href="#">
+                        <h4>Ch. AGYARKO</h4>
+                    </a>
+                </div>
 
-            <div class="font-semibold text-xl">
-                <a href="#">
-                    <h4>Ch. AGYARKO</h4>
-                </a>
+                <div class="hidden md:flex justify-around gap-8 space-x-8">
+                    <a href="#"><span class="hover:text-rose-400">Home</span></a>
+                    <a href="#about"><span class="hover:text-rose-400">About</span></a>
+                    <a href="#skills"><span class="hover:text-rose-400">Skills</span></a>
+                    <a href="#portfolio"><span class="hover:text-rose-400">Portfolio</span></a>
+                    <a href="#contact"><span class="hover:text-rose-400">Contact</span></a>
+                </div>
+
+                <!-- Hamburger navbar -->
+                <div class="md:hidden">
+                    <a href="#mobile-menu-button"><button id="mobile-menu-button" class="text-white focus:outline-none">
+                            <i class="fas fa-bars text-2xl"></i>
+                        </button></a>
+                </div>
+
             </div>
 
-            <div class="flex justify-around gap-8">
-                <a href="#"><span class="hover:text-rose-400">Home</span></a>
-                <a href="#about"><span class="hover:text-rose-400">About</span></a>
-                <a href="#skills"><span class="hover:text-rose-400">Skills</span></a>
-                <a href="#portfolio"><span class="hover:text-rose-400">Portfolio</span></a>
-                <a href="#contact"><span class="hover:text-rose-400">Contact</span></a>
+            <div id="mobile-menu-button" class="md:hidden hidden mt-4 pb-4">
+                <a href="index.html"><span class="block py-2 hover:text-rose-400">Home</span></a>
+                <a href="#about"><span class="block py-2 hover:text-rose-400">About</span></a>
+                <a href="#skills"><span class="block py-2 hover:text-rose-400">Skills</span></a>
+                <a href="#portfolio"><span class="block py-2 hover:text-rose-400">Portfolio</span></a>
+                <a href="#contact"><span class="block py-2 hover:text-rose-400">Contact</span></a>
             </div>
         </nav>
+
+    </header>
+
+    <section id="hero"
+        class="bg-[url(./images/gallery0_2.jpeg)] bg-cover bg-no-repeat bg-[#272622] bg-right h-screen bg-zinc-400 bg-blend-multiply relative">
 
         <div class="text-white flex flex-col text-center justify-center items-center h-full">
             <h1 class="text-7xl leading-24"><span class="font-extralight">Howdy, I'm</span>
@@ -41,27 +62,28 @@
             <h1 class="text-2xl font-light leading-12">A web developer | Graphic designer | Photographer </h1>
 
             <a href="mailto:bookyodastudios@gmail.com"><button
-                class="border rounded-sm px-8 py-4 bg-none mt-4 text-xs font-bold hover:bg-white hover:text-rose-500 hover:b-none mt-14 cursor-pointer animate-pulse">HIRE
-                ME</button></a>
-            
+                    class="rounded-3xl px-10 py-4 mt-4 text-xs font-bold bg-rose-500 text-white mt-14 cursor-pointer animate-pulse hover:animate-none">HIRE
+                    ME</button></a>
+
         </div>
 
-    </header>
+    </section>
 
-    <section id="about" class="flex flex-row justify-center items-center m-auto">
 
-        <div class="flex justify-center items-center py-20 w-[60%] mx-auto relative gap-10">
-            <div class="flex justify-center bg-contain w- pr-4 max-w-96 h-full">
+    <section id="about" class="flex flex-row sm:flex-col md:flex-col justify-center items-center m-auto">
+
+        <div class="flex justify-center items-center py-20 w-[60%] m-auto relative gap-10">
+            <div class="flex justify-center bg-contain pr-4 max-w-96 h-full">
                 <img src="./images/gallery1_0.jpg" alt="white top" class="bg-contain w-full shadow-lg">
             </div>
 
             <div>
 
-                <h2 class="text-2xl mb-6 border-b-1 border-t-1 py-2 w-27 border-rose-500 text-zinc-700"><span
+                <h2 class="text-2xl border-b-1 border-t-1 mb-6 py-2 w-27 border-rose-500 text-zinc-700"><span
                         class="font-thin">About</span>
                     <span class="font-extrabold">Me</span>
                 </h2>
-                <p class="W-1/4 text-sm text-zinc-500 mb-3 leading-6">Hi my name is Charlotte Agyarko but I go by Yoda
+                <p class="W-1/4 text-sm text-zinc-500 mb-3 leading-6">Hi my name is Charlotte Agyarko and I go by Yoda
                     in the
                     creative space.
                     <br>I am a Ghanaian female photographer striving to make a mark and have my works recognised through
@@ -76,7 +98,7 @@
 
                 <a href="#portfolio">
                     <button
-                        class="border-none rounded-sm px-8 py-4 bg-rose-500 mt-4 text-white text-xs hover:bg-fuchsia-600 cursor-pointer">PORTFOLIO</button>
+                        class="border-none rounded-sm px-8 py-4 bg-rose-400 mt-4 text-white text-xs hover:bg-rose-600 cursor-pointer">PORTFOLIO</button>
                 </a>
                 <a href="/images/CV_official.1.pdf" target="_blank" rel="noopener noreferrer">
                     <button
@@ -90,10 +112,10 @@
     </section>
 
 
-    <section id="skills" class="flex flex-row justify-center items-start">
-        <div class="flex py-24 gap-26 w-[60%] mx-auto">
+    <section id="skills" class="flex flex-col justify-center items-center">
+        <div class="flex py-10 gap-26 w-[60%] h-full">
 
-            <div class="justify-center mx-auto">
+            <div class="justify-center m-auto">
                 <h3 class="text-xl mb-6 border-b-1 border-t-1 py-2 w-22 border-rose-500 text-zinc-700">
                     <span class="font-thin">My</span>
                     <span class="font-extrabold">Skills</span>
@@ -122,7 +144,7 @@
                     CAPTURE ONE</p>
             </div>
 
-            <div class="text-balance">
+            <div class="text-balance h-full py-10">
                 <h3 class="text-xl mb-6 border-b-1 border-t-1 py-2 w-38 border-rose-500 text-zinc-700">
                     <span class="font-thin">My</span>
                     <span class="font-extrabold">Experiences</span>
@@ -166,8 +188,8 @@
     </section>
 
     <section id="portfolio" class="bg-zinc-100">
-        <div class="flex flex-col w-[60%] mx-auto py-20">
-            <div class="justify-center mx-auto">
+        <div class="flex flex-col w-[60%] mx-auto py-20 h-full">
+            <div class="flex justify-center items-center">
                 <h4 class="text-2xl mb-14 border-b-1 border-t-1 py-2 w-37 border-rose-500 text-zinc-700">
                     <span class="font-thin">My</span>
                     <span class="font-extrabold">Portfolio</span>
@@ -176,14 +198,25 @@
 
             <div class="grid grid-cols-3 gap-4 mb-16">
 
-                <img src="./images/gallery3.jpg" alt="product pic" class="col-span-3 transition-transform duration-500 hover:scale-105 ">
-                <img src="./images/gallery11.jpg" alt="black and white pic" class="w-64 transition-transform duration-500 hover:scale-110">
-                <img src="./images/gallery12.jpg" alt="feet ring pic" class="w-64 transition-transform duration-500 hover:scale-110">
-                <img src="./images/gallery7.jpg" alt="cupcake pic" class="w-64 transition-transform duration-500 hover:scale-110">
-                <!-- <img src="./images/gallery6.jpg" alt="baby red"> -->
-                <img src="./images/gallery5.jpg" alt="baby blue" class="w-64 transition-transform duration-500 hover:scale-110">
-                <img src="./images/gallery4.jpg" alt="rgb pic" class="w-64 transition-transform duration-500 hover:scale-110">
-                <img src="./images/gallery9.jpg" alt="dreads pic" class="w-64 transition-transform duration-500 hover:scale-110">
+                <img src="./images/gallery3.jpg" alt="product pic"
+                    class="col-span-3 transition-transform duration-500 hover:scale-105 ">
+                <img src="./images/Screenshot_knusford.png" alt="grow"
+                    class="w-64 transition-transform duration-500 hover:scale-130">
+                <img src="./images/Screenshot_dogger.png" alt="dogger"
+                    class="w-64 transition-transform duration-500 hover:scale-130">
+                <img src="./images/gallery6.jpg" alt="baby red"
+                    class="w-64 transition-transform duration-500 hover:scale-120">
+                <img src="./images/gallery11.jpg" alt="black and white pic"
+                    class="w-64 transition-transform duration-500 hover:scale-120">
+                <img src="./images/gallery7.jpg" alt="cupcake pic"
+                    class="w-64 transition-transform duration-500 hover:scale-120">
+                <img src="./images/gallery4.jpg" alt="rgb pic"
+                    class="w-64 transition-transform duration-500 hover:scale-110">
+                <!-- <img src="./images/gallery5.jpg" alt="baby blue" -->
+                <!-- class="w-64 transition-transform duration-500 hover:scale-110"> -->
+
+                <!-- <img src="./images/gallery9.jpg" alt="dreads pic" -->
+                <!-- class="w-64 transition-transform duration-500 hover:scale-110"> -->
                 <!-- <img src="./images/gallery14.jpg" alt=""> -->
 
             </div>
@@ -192,13 +225,14 @@
     </section>
 
 
-    <footer id="contact" class="h-[40vh] flex flex-col text-center justify-center bg-gray-800 text-white font-extralight text-sm">
+    <footer id="contact"
+        class="h-[35vh] flex flex-col text-center justify-center bg-gray-800 text-white font-extralight text-sm ">
 
 
 
-        <div class="flex flex-row justify-between items-center mx-auto py-4 gap-20">
+        <div class="flex flex-row justify-around items-center w-[55%] mx-auto">
 
-            <div class="flex flex-row justify-around items-center">
+            <div class="flex flex-row justify-around items-center gap-20 mb-3">
 
                 <!-- <h5 class="text-sm font-extralight text-white">My Contact Details</h5> -->
 
@@ -206,39 +240,43 @@
                 <!-- <span class="uppercase font-bold">Phone:</span> -->
                 <!-- <br>+233 240 571 700 <br>+233 505 885 364 -->
 
-                <p class="pb-4 text-left text-xl font-bold">
-                    <span class="uppercase font-extralight text-sm">Get In Touch:</span>
+                <p class="pb-4 text-left">
+                    <span class="uppercase font-semibold text-sm">Get In Touch:</span>
                     <br>
-                    <a href="mailto:bookyodastudios@gmail.com"><span class="cursor-pointer hover:text-rose-400">bookyodastudios@gmail.com</span></a>
+                    <a href="mailto:bookyodastudios@gmail.com"><span
+                            class="font-light text-xl hover:text-rose-400">bookyodastudios@gmail.com</span></a>
 
                     <!-- <p class="pl-2 border-l-1 text-left"> -->
                     <!-- <span class="uppercase font-bold">Address:</span> -->
                     <!-- <br>P. O. Box kt 12 -->
                     <!-- <br>Kotobabi - Accra, Ghana. -->
                     <!-- </p> -->
+
+                <ul class="flex gap-2 justify-center md:py-0 py-4 md:flex-row lg:flex-row text-gray-300">
+                    <li class="">
+                        <a href="" class=""><i
+                                class="uil uil-instagram lg:text-3xl md:text-3xl text-4xl hover:text-gold hover:text-rose-400"></i></a>
+                    </li>
+                    <li class="">
+                        <a href="" class=""><i
+                                class="uil uil-facebook lg:text-3xl md:text-3xl text-4xl hover:text-gold hover:text-rose-400"></i></a>
+                    </li>
+                    <li class="">
+                        <a href="" class=""><i
+                                class="uil uil-linkedin lg:text-3xl md:text-3xl text-4xl hover:text-gold hover:text-rose-400"></i></a>
+                    </li>
+                    <!-- <li class=""> -->
+                    <!-- <a href="" class=""><i class="fa-brands fa-linkedin" style="color: #f5f5f5;"></i></a> -->
+                    <!-- </li> -->
+                </ul>
+
             </div>
 
-            <ul class="flex gap-4 justify-center md:py-0 py-4 md:flex-row lg:flex-row text-gray-300">
-                <li class="">
-                    <a href="" class=""><i
-                            class="uil uil-instagram lg:text-4xl md:text-3xl text-4xl hover:text-gold hover:text-rose-400"></i></a>
-                </li>
-                <li class="">
-                    <a href="" class=""><i
-                            class="uil uil-facebook lg:text-4xl md:text-3xl text-4xl hover:text-gold hover:text-rose-400"></i></a>
-                </li>
-                <li class="">
-                    <a href="" class=""><i
-                            class="uil uil-linkedin lg:text-4xl md:text-3xl text-4xl hover:text-gold hover:text-rose-400"></i></a>
-                </li>
-                <li class="">
-                    <a href="" class=""><i class="fa-brands fa-linkedin" style="color: #f5f5f5;"></i></a>
-                </li>
-            </ul>
+
 
         </div>
 
-        <div class="border-t-1 w-1/2 mx-auto py-6 flex justify-center items-center">
+        <div class="border-t-1 w-[40%] mx-auto py-4 flex justify-center items-center">
             <p class="">Copyright ©2025 All rights reserved | This template is made by Charlotte Agyarko</p>
         </div>
 
